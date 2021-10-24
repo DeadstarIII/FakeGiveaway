@@ -32,7 +32,8 @@ async def giveaway(ctx,winner:discord.Member,duration,*, msg):
       await ctx.send(f"<@{winner.id}>")
       await ctx.send(embed=winner_embed)
 #use only 'seconds' in the while using the cmd, the time will be given in hrs in embed,
-# example - >giveaway @user(the winner) 18000(5.0 hrs, duration in seconds only) Nitro Classic (msg is the prize)
+# example
+# >giveaway @user(the winner) 18000(5.0 hrs, duration in seconds only) Nitro Classic (msg is the prize)
       
 
 bot.run(TOKEN)
