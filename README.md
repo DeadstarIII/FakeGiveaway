@@ -11,7 +11,7 @@ Only users with "administrator" permission can use the command
 <b>I have added a feature in <a href="https://github.com/DeadstarIII/FakeGiveaway/blob/main/bot.py" target="_blank">bot.py</a> where you can use hours in the command instead of giving seconds.</b>
 
 <b>Someone suggested me to make the embed same as the orignal Giveaway bot which we see in discord.
-and if you want it's code then you can go here</b>
+and if you want it's code then you can see it here <a href="https://github.com/DeadstarIII/FakeGiveaway/blob/main/gw.py" target="_blank">gw.py</a></b>
 
 # Some important lines
 
