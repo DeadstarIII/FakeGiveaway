@@ -17,7 +17,7 @@ and if you want it's code then you can see it here <a href="https://github.com/D
 # Future Updates : 
 
 <b>I will add the countdown function soon after I get free from my studies and new video releasing on YT soon. 
-If you want any updates please DM me on discord/create an issue.</b>
+If you want any updates please DM me on Discord.</b>
 
 
 # Some important lines
