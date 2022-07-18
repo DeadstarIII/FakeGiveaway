@@ -7,3 +7,7 @@ This is made for educational purpose, if you do scam giveaways then im not respo
 
 ## Hey there, I released my ReplIt version too check it out
 <a href="https://replit.com/@DeadstarIII/FakeGiveawayBot" target="_blank">Repl.it</a>
+
+## ChangeLog : 
+
+<bold>I have added a feature in </bold>
