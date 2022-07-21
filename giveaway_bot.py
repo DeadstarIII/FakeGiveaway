@@ -20,7 +20,7 @@ async def on_ready():
 @commands.has_permissions(administrator=True)
 async def giveaway(ctx, winner: discord.Member, duration_hours, *, msg):
     await ctx.message.delete()
-    UTC_now = round(datetime.datetime.utcnow().timestamp())
+    UTC_now = datetime.datetime.utcnow()
     int_dur = int(float(duration_hours))  # int()
     dur_mins = int_dur*60
     dur_seconds = dur_mins*60
