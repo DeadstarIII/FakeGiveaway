@@ -4,6 +4,7 @@ from discord.ext import commands
 import asyncio
 from dotenv import load_dotenv
 import datetime
+from datetime import timedelta
 load_dotenv()
 TOKEN = os.getenv("token")
 bot = commands.Bot(command_prefix=">", case_sensitive=False)
@@ -14,6 +15,17 @@ bot.remove_command("help")
 async def on_ready():
     print("Bot logged in")
     # Don't give anything here for changing status from Online to Idle etc, don't give a playing status in `on_ready`, making API calls in on_ready can ban your IP from discord.
+
+now = discord.utils.utcnow()
+# define an instance of timedelta with minutes set to 5
+# we will use this to increase the time of the datetime.datetime instance above
+five_minutes = timedelta(minutes=5)
+# add the 5 minutes to the current time
+time = now + five_minutes
+# get the timestamp, cast it to int and assign it to a variable
+timestamp = int(time.timestamp())
+# construct the discord timestamp format with the timestamp
+string = f"<t:{timestamp}:R>"
 
 
 @bot.command()
@@ -26,8 +38,7 @@ async def giveaway(ctx, winner: discord.Member, duration_hours, *, msg):
     dur_seconds = dur_mins*60
     giveaway_embed = discord.Embed()
     giveaway_embed.title = f"{msg}"
-    giveaway_embed.description = f"""React with :tada: to enter! \n 
-     Ends: {duration_hours} hours (<t:{UTC_now}:f>) This giveaway started at {UTC_now.year}-{UTC_now.month}-{UTC_now.day} \t {UTC_now.hour}:{UTC_now.minute}
+    giveaway_embed.description = f"""React with :tada: to enter! \n  Ends: {duration_hours} hours ({timestamp}) This giveaway started at {UTC_now.year}-{UTC_now.month}-{UTC_now.day} \t {UTC_now.hour}:{UTC_now.minute}
       """  # UTC_now.second
     await ctx.send(":tada: **GIVEAWAY** :tada:")  # Check README.md if you want to use giveaway bot's tada emoji without adding the emote in the server whewre the giveaway is going to take place
 
