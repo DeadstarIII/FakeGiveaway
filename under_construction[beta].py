@@ -7,7 +7,8 @@ import datetime
 from datetime import timedelta
 load_dotenv()
 TOKEN = os.getenv("token")
-bot = commands.Bot(command_prefix=">", case_sensitive=False)
+intents = discord.Intents().all()
+bot = commands.Bot(command_prefix=">", case_sensitive=False, intents=intents)
 bot.remove_command("help")
 
 
