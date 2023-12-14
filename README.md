@@ -16,8 +16,10 @@ If you want the exact tada emoji of the giveaway bot then you can download from 
 <b>I have added a feature in <a href="https://github.com/DeadstarIII/FakeGiveaway/blob/main/bot.py" target="_blank">bot.py</a> where you can use hours in the command instead of giving seconds.</b>
 
 <b>Someone suggested me to make the embed same as the orignal Giveaway bot which we see in discord.
-and if you want it's code then you can see it <a href="https://github.com/DeadstarIII/FakeGiveaway/blob/main/under_construction[beta].py" target="_blank">here</a></b>
+and if you want it's code then you can use/see it <a href="https://github.com/DeadstarIII/FakeGiveaway/blob/main/giveawaybot_clone.py" 
+target="_blank">here</a></b>
 
+# Note : I am not responsible for any scams that may happen by using the code. This is made for educational purpose.
 
 # Future Updates : 
 
