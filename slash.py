@@ -1,7 +1,7 @@
 import discord
 import interactions
 
-bot = interactions.Client(token="MTA4MDcwODYyOTExNzgwODgyMQ.GwHIci.ylmUzEUE5vRTPPHLAjMD4Uv0bDdhi8CT0PlHqY")
+bot = interactions.Client(token="")
 
 @bot.command(
     name="my_first_command",
